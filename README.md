@@ -1,5 +1,22 @@
 # LeetCode Explore Solutions
 
+## February Explore
+
+### Number of 1 Bits
+
+Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+
+>   * Note that in some languages such as Java, there is no unsigned integer type. In this case, the input will be given as a signed integer type. It should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.
+> * In Java, the compiler represents the signed integers using 2's complement notation. Therefore, in Example 3, the input represents the signed integer. -3.
+
+### Linked List Cycle
+
+Given head, the head of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
+
+Return true if there is a cycle in the linked list. Otherwise, return false
+
 ## March Explore
 
 ### Distribute Candies
