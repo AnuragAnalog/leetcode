@@ -44,3 +44,9 @@ Follow up: Could you implement a solution using only O(1) extra space complexity
 ### Intersection of Two Linked Lists
 
 Write a program to find the node at which the intersection of two singly linked lists begins to intersect at node c1.
+
+### Average of Levels in Binary Tree
+
+Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
+
+> The range of node's value is in the range of 32-bit signed integer.
