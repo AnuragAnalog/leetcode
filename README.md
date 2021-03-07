@@ -50,3 +50,13 @@ Write a program to find the node at which the intersection of two singly linked 
 Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
 
 > The range of node's value is in the range of 32-bit signed integer.
+
+### Short Encoding of Words
+
+A valid encoding of an array of words is any reference string s and array of indices indices such that:
+
+* words.length == indices.length
+* The reference string s ends with the '#' character.
+* For each index indices[i], the substring of s starting from indices[i] and up to (but not including) the next '#' character is equal to words[i].
+
+Given an array of words, return the length of the shortest reference string s possible of any valid encoding of words.
