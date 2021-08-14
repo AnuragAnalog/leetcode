@@ -1,6 +1,6 @@
 # LeetCode Explore Solutions
 
-You can find all the challenges which are solved by me in leetcode
+You can find all the challenges which I have solved in leetcode
 
 ## February Explore
 
