@@ -1,5 +1,8 @@
 class Solution:
     def findWinningPlayer(self, skills: List[int], k: int) -> int:
+        if k > len(skills):
+            return skills.index(max(skills))
+
         wins = dict()
         positions = [i for i in range(len(skills))]
 
