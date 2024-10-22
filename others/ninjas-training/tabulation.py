@@ -1,7 +1,8 @@
 from typing import *
-  
+
+
 def ninjaTraining(n: int, points: List[List[int]]) -> int:
-    dp = [[0]*4 for _ in range(n)]
+    dp = [[0] * 4 for _ in range(n)]
 
     for i in range(4):
         maxi = 0
@@ -20,4 +21,4 @@ def ninjaTraining(n: int, points: List[List[int]]) -> int:
 
             dp[i][j] = maxi
 
-    return dp[n-1][3]
+    return dp[n - 1][3]

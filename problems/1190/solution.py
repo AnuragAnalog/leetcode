@@ -10,7 +10,7 @@ class Solution:
 
                 if len(letter_stack) != 0:
                     letter_stack.pop()
-                
+
                 for cc in rev:
                     letter_stack.append(cc)
             else:

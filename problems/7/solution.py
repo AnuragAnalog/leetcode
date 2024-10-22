@@ -7,7 +7,7 @@ class Solution:
 
         reverse = int(str(x)[::-1])
 
-        if reverse < -2**31 or reverse > (2**31) - 1:
+        if reverse < -(2**31) or reverse > (2**31) - 1:
             return 0
         else:
             if neg:

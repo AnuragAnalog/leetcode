@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 
+
 class Solution:
     def getNumber(self, l1):
         curr = l1
@@ -15,7 +16,9 @@ class Solution:
 
         return num
 
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         n1 = self.getNumber(l1)
         n2 = self.getNumber(l2)
 
@@ -28,7 +31,7 @@ class Solution:
             return dummy
 
         while n3 > 0:
-            curr.next = ListNode(n3%10)
+            curr.next = ListNode(n3 % 10)
             n3 //= 10
             curr = curr.next
 

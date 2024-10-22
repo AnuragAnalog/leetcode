@@ -21,6 +21,6 @@ class Solution:
     def kthLargestLevelSum(self, root: Optional[TreeNode], k: int) -> int:
         self.levelOrder(root, 0)
         try:
-            return sorted(self.level_nodes.values(), reverse=True)[k-1]
+            return sorted(self.level_nodes.values(), reverse=True)[k - 1]
         except:
             return -1

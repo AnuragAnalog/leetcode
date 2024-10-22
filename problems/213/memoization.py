@@ -6,7 +6,7 @@ class Solution:
             return max(arr[0], arr[1])
         else:
             m1 = arr[ind] + self.dp(ind - 2, arr)
-            m2 = self.dp(ind-1, arr)
+            m2 = self.dp(ind - 1, arr)
 
         return max(m1, m2)
 

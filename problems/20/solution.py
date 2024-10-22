@@ -20,7 +20,7 @@ class Solution:
                     pars.pop(-1)
                 else:
                     return False
-        
+
         if len(pars) == 0:
             return True
         else:

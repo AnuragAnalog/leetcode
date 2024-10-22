@@ -13,7 +13,7 @@ class Solution:
 
         bins = ""
         while n != 0:
-            bins += str(n&1)
+            bins += str(n & 1)
             n = n >> 1
 
         for dig in bins[::-1][1:]:

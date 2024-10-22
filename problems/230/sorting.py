@@ -19,4 +19,4 @@ class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         self.inOrder(root)
 
-        return self.values[k-1]
+        return self.values[k - 1]

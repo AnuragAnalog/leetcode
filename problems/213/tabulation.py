@@ -6,7 +6,7 @@ class Solution:
         value[1] = max(houses[0], houses[1])
 
         for i in range(2, n):
-            value[i] = max(houses[i] + value[i - 2], value[i-1])
+            value[i] = max(houses[i] + value[i - 2], value[i - 1])
 
         return value[-1]
 

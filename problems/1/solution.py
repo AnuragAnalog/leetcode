@@ -23,7 +23,7 @@ class Solution:
         for i, snum in enumerate(sorted_nums):
             fval = sorted_nums[i][0]
             sorted_nums[i][0] = 10**30
-            sval = self.binarySearch(sorted_nums, target-fval)
+            sval = self.binarySearch(sorted_nums, target - fval)
             if sval != -1:
                 print(sval)
                 return [sorted_nums[i][1], sval]

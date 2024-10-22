@@ -1,12 +1,12 @@
 class Solution:
     def is_digit(self, char):
-        return ("0" <= char <= "9")
-    
+        return "0" <= char <= "9"
+
     def is_upper(self, char):
-        return ("A" <= char <= "Z")
+        return "A" <= char <= "Z"
 
     def is_lower(self, char):
-        return ("a" <= char <= "z")
+        return "a" <= char <= "z"
 
     def stack_element_count(self, atoms):
         atom_counts = list()
@@ -54,7 +54,7 @@ class Solution:
             elif self.is_digit(formula[i]):
                 mul = 0
                 while self.is_digit(formula[i]):
-                    mul = mul*10 + int(formula[i])
+                    mul = mul * 10 + int(formula[i])
                     i += 1
                     if i == n:
                         break
@@ -62,8 +62,8 @@ class Solution:
                 atom_stack[-1] *= mul
             elif formula[i] == ")":
                 mul = 0
-                while self.is_digit(formula[i+1]):
-                    mul = mul*10+int(formula[i+1])
+                while self.is_digit(formula[i + 1]):
+                    mul = mul * 10 + int(formula[i + 1])
                     i += 1
                     if i == n - 1:
                         break
@@ -72,14 +72,14 @@ class Solution:
 
                 temp = list()
                 while atom_stack[-1] != "(":
-                    temp.append(atom_stack.pop()*mul)
+                    temp.append(atom_stack.pop() * mul)
                 atom_stack.pop()
                 while temp:
                     atom_stack.append(temp.pop())
             i += 1
 
         atom_counts = self.stack_element_count(atom_stack)
-        atom_dict = (self.make_atom_dict(atom_counts))
+        atom_dict = self.make_atom_dict(atom_counts)
         for k, v in atom_dict.items():
             if v == 1:
                 atom_dict[k] = ""

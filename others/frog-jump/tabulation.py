@@ -5,6 +5,7 @@ from math import *
 
 from typing import *
 
+
 def energyGain(ind, heights):
     if ind == 0:
         return 0
@@ -16,6 +17,7 @@ def energyGain(ind, heights):
 
     return min(er, el)
 
+
 def frogJump(n: int, heights: List[int]) -> int:
     dp = [0] * n
 
@@ -23,8 +25,8 @@ def frogJump(n: int, heights: List[int]) -> int:
     dp[1] = abs(heights[0] - heights[1])
 
     for i in range(2, n):
-        er = dp[i - 1] + abs(heights[i] - heights[i-1])
-        el = dp[i - 2] + abs(heights[i] - heights[i-2])
+        er = dp[i - 1] + abs(heights[i] - heights[i - 1])
+        el = dp[i - 2] + abs(heights[i] - heights[i - 2])
 
         dp[i] = min(el, er)
 

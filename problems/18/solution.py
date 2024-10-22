@@ -6,7 +6,7 @@ class Solution:
         snums = sorted(nums)
 
         for i in range(n):
-            for j in range(i+1, n):
+            for j in range(i + 1, n):
                 k = j + 1
                 l = n - 1
 

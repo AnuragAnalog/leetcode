@@ -11,7 +11,7 @@ class Solution:
             return s
 
         for i in range(n):
-            for j in range(i+1, n+1):
+            for j in range(i + 1, n + 1):
                 if self.palindrome(s[i:j]):
                     if maxi < len(s[i:j]):
                         maxi = len(s[i:j])

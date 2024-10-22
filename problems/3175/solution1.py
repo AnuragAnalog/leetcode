@@ -11,7 +11,7 @@ class Solution:
             if skills[p1] > skills[p2]:
                 wins[skills[p1]] = wins.get(skills[p1], 0) + 1
                 lose = positions.pop(1)
-                positions.append(lose) 
+                positions.append(lose)
             else:
                 wins[skills[p2]] = wins.get(skills[p2], 0) + 1
                 lose = positions.pop(0)

@@ -7,8 +7,8 @@ class Solution:
         ox = x
 
         while x != 0:
-            rev_number = rev_number*10+x%10
-            x = int(x//10)
+            rev_number = rev_number * 10 + x % 10
+            x = int(x // 10)
 
         if ox == rev_number:
             return True

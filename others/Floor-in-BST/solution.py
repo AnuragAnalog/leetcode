@@ -14,8 +14,9 @@ from math import *
 #             self.data = data
 #             self.left = None
 #             self.right = None
-            
+
 # ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 
 def search(root, X, mini):
     if root is None:
@@ -26,6 +27,7 @@ def search(root, X, mini):
         mini = search(root.left, X, mini)
 
         return mini
+
 
 def floorInBST(root, X):
     mini = list()
